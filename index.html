@@ -254,7 +254,7 @@ body.travado{overflow:hidden}
  <div class="w cen">
   <span class="etq vidro">🔊 Aumenta o som</span>
   <h2 class="sec-t">Antes de abrir o cofre,<br>ouça o <span style="color:var(--ouro)">seu</span> celular.</h2>
-  <p class="sec-l">Escolha uma oferta pronta, coloque o checkout e suba. Leva 20 segundos.</p>
+  <p class="sec-l">Escolha uma oferta pronta e suba a campanha. Leva 15 segundos.</p>
   <div class="simbox vidro">
    <div class="ps on" id="p0">
     <div class="stp">Passo 1 de 3</div><h3>Escolha um app</h3><p class="sl">Cada um abre uma oferta real do acervo.</p>
@@ -269,8 +269,6 @@ body.travado{overflow:hidden}
     <div class="stp">Passo 2 de 3</div><h3>Sua pasta está pronta</h3>
     <div class="of"><img decoding="async" id="sIc" src="" alt=""><div><b id="sNm"></b><span id="sMk"></span></div></div>
     <div class="ck"><div><i>✓</i>Página de vendas</div><div><i>✓</i>5 criativos</div><div><i>✓</i>Entregável com capa</div><div><i>✓</i>Order bump e upsell</div></div>
-    <div class="cf" id="sCf">Seu link de checkout</div>
-    <a class="bt ouro big" href="#" id="sCola" style="display:none">Colar meu checkout</a>
     <a class="bt ouro big" href="#" id="sSobe" style="display:none">Subir a campanha 🚀</a>
    </div>
    <div class="ps" id="p2">
@@ -306,11 +304,8 @@ document.querySelectorAll('#sim [data-o]').forEach(function(b){b.onclick=functio
  o=O[+b.dataset.o];try{au.load()}catch(e){}
  $('sIc').src=document.querySelectorAll('#sim [data-o] img')[o.ic].src;$('sNm').textContent=o.n;$('sMk').textContent=o.m+' · pasta completa';
  var ck=document.querySelectorAll('#sim .ck div');ck.forEach(function(d){d.classList.remove('ok')});
- $('sCf').className='cf';$('sCf').textContent='Seu link de checkout';$('sCola').style.display='none';$('sSobe').style.display='none';
- go(1);ck.forEach(function(d,i){later(function(){d.classList.add('ok')},350+i*380)});later(function(){$('sCola').style.display=''},350+4*380)}});
-$('sCola').onclick=function(e){e.preventDefault();var t='pay.seucheckout.com/'+o.n.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').slice(0,18),i=0;
- $('sCf').className='cf ok';$('sCf').textContent='';this.style.display='none';
- (function ty(){if(i<=t.length){$('sCf').textContent=t.slice(0,i++);later(ty,18)}else{$('sSobe').style.display=''}})()};
+ $('sSobe').style.display='none';
+ go(1);ck.forEach(function(d,i){later(function(){d.classList.add('ok')},350+i*380)});later(function(){$('sSobe').style.display=''},350+4*380)}});
 $('sSobe').onclick=function(e){e.preventDefault();try{au.play().then(function(){au.pause();au.currentTime=0}).catch(function(){})}catch(x){}
  go(2);$('sSt').textContent='Publicando o anúncio…';$('sBar').style.transition='none';$('sBar').style.width='0';$('sNts').innerHTML='';$('sFim').style.display='none';
  var d=new Date();$('sHr').textContent=String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
@@ -466,7 +461,7 @@ $('sAbre').onclick=abre;$('sPula').onclick=abre;document.body.classList.add('tra
     <div class="de">de <s>R$ 297,00</s> por</div><div class="val" style="margin-top:4px">R$ 197<small> uma vez só</small></div><span class="eco">Pagamento único · sem mensalidade</span>
     <div class="ct">Brasil, LATAM, EUA e Europa</div>
     <ul class="lista"><li>Todas as ofertas<i>50</i></li><li>Real, dólar e euro<i>✓</i></li><li>Bônus<i>4 de 4</i></li><li>Novas ofertas<i>✓</i></li><li>Acesso<i>Vitalício</i></li></ul>
-    <a class="bt ouro big" href="https://pay.cakto.com.br/u3hgr4v_1359978" data-plano="ouro">Quero o acesso vitalício</a>
+    <a class="bt ouro big" href="https://pay.cakto.com.br/3765bdo_1360263" data-plano="ouro">Quero o acesso vitalício</a>
     <p class="conta">12 meses de Prata custam <b>R$ 1.198,80</b>. O Ouro custa <b>R$ 197</b> para sempre.</p>
    </div>
    <div class="plano vidro p-prata">
@@ -474,14 +469,14 @@ $('sAbre').onclick=abre;$('sPula').onclick=abre;document.body.classList.add('tra
     <div class="de">de <s>R$ 197,00/mês</s> por</div><div class="val" style="margin-top:4px">R$ 99,90<small> /mês</small></div><span class="eco">Economia de R$ 97,10 por mês</span>
     <div class="ct">Brasil, LATAM e EUA</div>
     <ul class="lista"><li>Ofertas nacionais<i>✓</i></li><li>LATAM e EUA<i>✓</i></li><li>Bônus<i>2 de 4</i></li><li class="no">Europa em euro<i>Não</i></li></ul>
-    <a class="bt vd" href="https://pay.cakto.com.br/uh5rqsk_1359983" data-plano="prata">Assinar o Prata</a>
+    <a class="bt vd" href="https://pay.cakto.com.br/3ac684r_1360260" data-plano="prata">Assinar o Prata</a>
    </div>
    <div class="plano vidro p-bronze">
     <div class="top"><div><h3>Bronze</h3><div class="ct" style="margin:0">Básico · assinatura semanal</div></div></div>
     <div class="de">de <s>R$ 49,90/semana</s> por</div><div class="val" style="margin-top:4px">R$ 29,90<small> /semana</small></div>
     <div class="aviso">Cobrado toda semana: R$ 129,57 por mês</div>
     <ul class="lista"><li>Ofertas nacionais<i>✓</i></li><li class="no">LATAM, EUA e Europa<i>Não</i></li><li class="no">Bônus<i>0 de 4</i></li><li class="no">Novas ofertas<i>Não</i></li></ul>
-    <a class="bt vd" href="https://pay.cakto.com.br/azga4do_1359761" data-plano="bronze">Assinar o Bronze</a>
+    <a class="bt vd" href="https://pay.cakto.com.br/enqffeh_1360255" data-plano="bronze">Assinar o Bronze</a>
    </div>
   </div>
  </div>
